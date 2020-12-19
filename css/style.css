@@ -1,0 +1,450 @@
+html {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.pembatas {
+    border: 1.5px solid #fff;
+    margin-top: 2em;
+}
+
+
+/* login page */
+
+.container.welcome {
+    padding-top: 8em;
+    width: auto;
+    height: auto;
+    transition: 0.8s;
+}
+
+label.text-username,
+label.text-password {
+    margin-top: 2.5em;
+    color: #fff;
+}
+
+.box-username,
+.box-password {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 3.5px;
+    border-bottom: 2px solid silver;
+    color: #fff;
+    transition: 0.8s;
+}
+
+.box-username:focus,
+.box-password:focus {
+    border-bottom: 2px solid #fff;
+}
+
+a.link-forgot {
+    display: inline-block;
+    margin-top: 0.5em;
+    text-decoration: none;
+}
+
+a.link-forgot:hover,
+a.link-create:hover {
+    color: #fff;
+}
+
+.button-login button {
+    width: 100%;
+    height: 40px;
+    margin-top: 3.5em;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.button-login button:hover {
+    background-color: silver;
+    color: #000;
+}
+
+a.link-create {
+    display: inline-block;
+    margin-top: 1.5em;
+    text-decoration: none;
+}
+
+.footer div.container {
+    background-color: #c4c4c4;
+    color: #000;
+}
+
+.footer p.copy {
+    font-size: 11px;
+    text-align: center;
+}
+
+.footer p.copy .my-name {
+    color: #fff;
+    transition: 0.8s;
+}
+
+.footer p.copy .my-name:hover {
+    text-shadow: 0px 0px 5px silver;
+}
+
+.footer a.link-footer {
+    color: #fff;
+}
+
+a.link-footer:hover {
+    color: silver;
+}
+
+
+/* end login page */
+
+
+/* home page */
+
+body.home {
+    background-image: url("../assets/img/bg-home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1.welcome-user {
+    font-size: 24px;
+}
+
+h1.welcome-user {
+    padding: 4em 2em;
+}
+
+img.header-image {
+    display: block;
+    width: 150px;
+    margin: auto;
+    box-shadow: 0 0 15px silver;
+}
+
+p.last-login {
+    margin-top: 1.5em;
+    font-size: 12px;
+}
+
+hr.home {
+    margin-top: 17em;
+}
+
+
+/* end home page */
+
+
+/* page daftar murid */
+
+h1.daftar-murid {
+    margin-top: 5em;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 1em;
+}
+
+form.form-cari {
+    /* width: 100%; */
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+form.form-cari input {
+    width: 73%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+form.form-cari input:focus {
+    box-shadow: 0 0 10px silver;
+}
+
+form.form-cari button {
+    width: 25%;
+    background-color: transparent;
+    border: none;
+    transition: 0.3s;
+}
+
+
+/* tabel murid */
+
+.list {
+    margin-top: 2em;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.badge-item {
+    margin-top: 1.5em;
+    border: 2px solid #000;
+    border-radius: 30%;
+    color: #000;
+}
+
+.badge-item:hover,
+.badge-item.hijau:hover {
+    color: rgb(0, 255, 0);
+    border: 2px solid lightgreen;
+}
+
+.badge-item:hover,
+.badge-item.kuning:hover {
+    color: rgb(255, 255, 0);
+    border: 2px solid lightyellow;
+}
+
+.badge-item:hover,
+.badge-item.merah:hover {
+    color: rgb(255, 0, 0);
+    border: 2px solid orangered;
+}
+
+
+/* end  table murid */
+
+
+/* end page daftar murid */
+
+
+/* page detail&ubah murid */
+
+h1.detail-murid {
+    margin-top: 5em;
+    font-size: 24px;
+    text-align: center;
+}
+
+label.text-nama-lengkap {
+    margin-top: 2.5em;
+}
+
+input.box-nama-lengkap-murid,
+textarea.box-alamat-murid,
+input.box-tingkatan-murid,
+textarea.box-catatan-murid {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+input.box-nama-lengkap-murid:read-only,
+textarea.box-alamat-murid:read-only,
+input.box-tingkatan-murid:read-only,
+textarea.box-catatan-murid:read-only {
+    background-color: silver;
+}
+
+a.kembali,
+a.ubah,
+a.hapus {
+    display: inline-block;
+    line-height: 1.3em;
+    text-align: center;
+    width: 5em;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+}
+
+hr.pembatas.tombol {
+    margin-top: 1em;
+}
+
+hr.pembatas.detail {
+    margin-top: 1em;
+}
+
+.tombol {
+    margin-top: -1.5em;
+}
+
+.ubah.badge-item:hover {
+    color: rgb(255, 255, 0);
+    border: 2px solid yellow;
+}
+
+.hapus.badge-item:hover {
+    color: rgb(255, 0, 0);
+    border: 2px solid orangered;
+}
+
+.kembali:hover {
+    border: 2px solid silver;
+    color: silver;
+}
+
+.simpan.badge-item {
+    border-radius: 8px;
+    border: 2px solid #fff;
+    color: #fff;
+    line-height: 1.3em;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.simpan.badge-item:hover {
+    color: rgb(0, 255, 0);
+    border: 2px solid lightgreen;
+}
+
+
+/* end page detail murid */
+
+
+/* page profile saya */
+
+h1.profile {
+    margin-top: 5em;
+    font-size: 24px;
+    text-align: center;
+}
+
+.poto-profile {
+    margin-top: 4em;
+}
+
+.pembatas.profile {
+    margin-top: 1em;
+}
+
+
+/* end page profile saya */
+
+
+/* page about */
+
+h1.about {
+    margin-top: 5em;
+    font-size: 24px;
+    text-align: center;
+}
+
+.row.about {
+    margin-top: 3em;
+}
+
+.poto-about {
+    margin-top: 1.5em;
+}
+
+.text-about {
+    margin-top: 2em;
+    height: 400px;
+}
+
+hr.pembatas.about {
+    margin-top: 4.3em;
+}
+
+
+/* end page about */
+
+.t-brown {
+    color: #727272;
+    font-size: 18px;
+}
+
+.t-white {
+    color: #fff;
+    font-size: 18px;
+}
+
+@media (min-width: 992px) {
+    /* login page */
+    .container.welcome {
+        padding-top: 3em;
+    }
+    .container.welcome:hover {
+        transform: translate(50px);
+        text-shadow: 0 0px 5px silver;
+    }
+    a.link-create {
+        margin-top: 1.5em;
+    }
+    hr.pembatas {
+        margin-top: 5em;
+    }
+    /* end login page */
+    /* home page */
+    hr.home {
+        margin-top: 15em;
+    }
+    /* end login page */
+    /* page daftar murid */
+    /* form cari */
+    form.form-cari input {
+        width: 89%;
+    }
+    form.form-cari button {
+        width: 10.5%;
+    }
+    form.form-cari button:hover {
+        box-shadow: 0 0 10px silver;
+    }
+    /* end form cari */
+    /* form daftar murid */
+    .badge-item:hover.hijau {
+        box-shadow: 0 0 10px green;
+    }
+    .badge-item:hover.kuning {
+        box-shadow: 0 0 10px yellow;
+    }
+    .badge-item:hover.merah {
+        box-shadow: 0 0 10px red;
+    }
+    /* end form daftar murid */
+    /* end page daftar murid */
+    /* page detail murid */
+    label.text-nama-lengkap {
+        margin-top: 1.5em;
+    }
+    .ubah.badge-item:hover {
+        box-shadow: 0 0 10px yellow;
+    }
+    .hapus.badge-item:hover {
+        box-shadow: 0 0 10px red;
+    }
+    .kembali:hover {
+        box-shadow: 0 0 10px silver;
+    }
+    .simpan.badge-item:hover {
+        box-shadow: 0 0 10px green;
+    }
+    /* end page detail murid */
+    /* page profile saya */
+    .pembatas.profile {
+        margin-top: 7.3em;
+    }
+    .text-about {
+        margin-top: 0;
+        height: 400px;
+    }
+    /* end page profile saya */
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url("assets/fonts/Montserrat-Medium.ttf") format("truetype");
+}
